@@ -10,7 +10,7 @@ The main graphical output looks like Mondrian paintings.}
 
 \usage{
   mondrian(data, labels = colnames(data), xlab = "", ylab = "", main = "", 
-    col = NULL , pop = NULL, indiv = TRUE, ...)
+    col = NULL , pop = NULL, indiv = FALSE, ...)
 }
 
 \arguments{

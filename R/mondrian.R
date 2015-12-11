@@ -1,4 +1,4 @@
-mondrian <- function(data, labels = colnames(data), xlab = "", ylab = "" , main = "", col = NULL , pop = NULL, indiv = TRUE, ...) {
+mondrian <- function(data, labels = colnames(data), xlab = "", ylab = "" , main = "", col = NULL , pop = NULL, indiv = FALSE, ...) {
   
   ## Initial checking
   data <- as.data.frame(data)
@@ -40,7 +40,7 @@ mondrian <- function(data, labels = colnames(data), xlab = "", ylab = "" , main 
     invisible(outpop)
     
 
-  } else {  ## Individuals are defined as begonging to the same population
+  } else {  ## Individuals are defined as belonging to the same population
     
     ## Percents matrix building
     counts_profiles <- rev(table(apply(data, 1, paste, collapse = ""))) ## counts table for profiles
