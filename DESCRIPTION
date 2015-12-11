@@ -1,0 +1,12 @@
+Package: Mondrian
+Type: Package
+Title: Display the Relative Occurrence of Multi-Infectious Statuses
+Description: The unique function represents the relative occurrence of individual multi-infectious statuses. 
+  The main graphical output looks like Mondrian paintings.   
+Version: 1.0-0
+Date: 2015-12-11
+Author: Aurelie Siberchicot, Delphine Charif, Gabriel Terraz and Fabrice Vavre
+Maintainer: Aurelie Siberchicot <aurelie.siberchicot@univ-lyon1.fr>
+Imports: RColorBrewer
+License: GPL (>=2.0)
+LazyData: yes
