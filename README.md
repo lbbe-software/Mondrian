@@ -7,3 +7,39 @@
 The `Mondrian` package contains only one function.
 This function, named `mondrian`, computes and displays relative occurences and co-occurences.
 When the output is recorded, the relative scores of each status and status combinaison are reported.
+
+
+
+### Installing `Mondrian`
+
+The `Mondrian` package is not yet on CRAN.
+To install the development version from GitHub:
+
+1. Install the release version of `devtools` from CRAN with `install.packages("devtools")`.
+
+2. Make sure you have a working development environment.
+    * **Windows**: Install [Rtools](http://cran.r-project.org/bin/windows/Rtools/).
+    * **Mac**: Install Xcode from the Mac App Store.
+    * **Linux**: Install a compiler and various development libraries (details vary across different flavors of Linux).
+    
+3. Then:
+
+```r
+library(devtools)
+install_github("aursiber/Mondrian")
+```
+
+4. Once installed, the package can be loaded using:
+
+```r
+library("adegraphics")
+```
+
+
+### Articles which use `Mondrian` functionalities
+
+* *Competitive outcome of multiple infections in a behavior-manipulating virus/wasp interaction.*
+Martinez et al. (2015). Ecology and Evolution 5(24):5934–5945. doi: 10.1002/ece3.1749
+* *Endosymbiont metacommunities, mtDNA diversity and the evolution of the Bemisia tabaci (Hemiptera: Aleyrodidae) species complex.*
+Gueguen et al. (2010). Molecular Ecology 19(19):4365-76. doi: 10.1111/j.1365-294X.2010.04775.x
+
