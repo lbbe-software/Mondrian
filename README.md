@@ -3,3 +3,7 @@
 
 
 # Mondrian
+
+The `Mondrian` package contains only one function.
+This function, named `mondrian`, computes and displays relative occurences and co-occurences.
+When the output is recorded, the relative scores of each status and status combinaison are reported.
