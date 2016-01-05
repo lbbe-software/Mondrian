@@ -48,6 +48,7 @@ The main graphical output looks like Mondrian paintings.}
   out1 <- mondrian(endosymbiont_1pop)
   out1
   
+  
   data(endosymbiont_3pop)
   out2 <- mondrian(endosymbiont_3pop, pop = 1)
   out2
