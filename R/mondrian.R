@@ -30,12 +30,12 @@ mondrian <- function(data, labels = colnames(data), xlab = "", ylab = "" , main 
     
     outpop <- list()
     ## Results for each sub-population
-    subpop <- by(data, data[, pop], function(x) mondrian(x[, - pop], pop = NULL, xlab = xlab, ylab = ylab, main = unique(x[, pop]), col = col, ...))
+    subpop <- by(data, data[, pop], function(x) mondrian(x[, - pop], pop = NULL, xlab = xlab, ylab = ylab, main = unique(x[, pop]), col = col, indiv = indiv, ...))
     outpop <- lapply(subpop, function(x) x)
     names(outpop) <- labelpop
     
     ## Result if all individuals belong to the same population
-    outpop$pop <- mondrian(data[, - pop], xlab = xlab, ylab = ylab , main = "Total population", col = col, pop = NULL, ...)
+    outpop$pop <- mondrian(data[, - pop], xlab = xlab, ylab = ylab , main = "Total population", col = col, pop = NULL, indiv = indiv, ...)
     par(mfrow = c(1, 1))
     invisible(outpop)
     
