@@ -40,6 +40,8 @@ library("adegraphics")
 
 * *Competitive outcome of multiple infections in a behavior-manipulating virus/wasp interaction.*
 Martinez et al. (2015). Ecology and Evolution 5(24):5934–5945. doi: 10.1002/ece3.1749
+* *Endosymbiont diversity among sibling weevil species competing for the same resource.*
+Merville et al. (2013). BMC Evolutionary Biology 13:28. doi: 10.1186/1471-2148-13-28
 * *Endosymbiont metacommunities, mtDNA diversity and the evolution of the Bemisia tabaci (Hemiptera: Aleyrodidae) species complex.*
 Gueguen et al. (2010). Molecular Ecology 19(19):4365-76. doi: 10.1111/j.1365-294X.2010.04775.x
 
