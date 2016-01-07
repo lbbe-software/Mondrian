@@ -48,7 +48,7 @@ Terraz et al. (2014). Pest Management Science, 70:1503-1513. doi: 10.1002/ps.379
 Merville et al. (2013). BMC Evolutionary Biology, 13:28. doi: 10.1186/1471-2148-13-28
 
 * *Distribution of Bemisia tabaci (Homoptera: Aleyrodidae) biotypes and their associated symbiotic bacteria on host plants in West Africa.*
-Gnankiné et al. (2012). Insect Conservation and Diversity, 6(3):411-421. doi: 10.1111/j.1752-4598.2012.00206.x
+Gnankiné et al. (2013). Insect Conservation and Diversity, 6(3):411-421. doi: 10.1111/j.1752-4598.2012.00206.x
 
 * *Endosymbiont metacommunities, mtDNA diversity and the evolution of the Bemisia tabaci (Hemiptera: Aleyrodidae) species complex.*
 Gueguen et al. (2010). Molecular Ecology, 19(19):4365-76. doi: 10.1111/j.1365-294X.2010.04775.x
