@@ -4,9 +4,10 @@
 
 # Mondrian
 
-The `Mondrian` package contains only one function.
-This function, named `mondrian`, computes and displays relative occurences and co-occurences.
-When the output is recorded, the relative scores of each status and status combinaison are reported.
+The `Mondrian` package delivers only one function.
+This function, named `mondrian`, computes and displays the relative occurence and co-occurence of events.
+It produces a graphical representation of the relative score of profiles concerning presnec/absence data
+and prints the relative percentages of each profile.
 
 
 
