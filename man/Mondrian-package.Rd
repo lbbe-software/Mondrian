@@ -5,9 +5,9 @@
 
 \docType{package}
 
-\title{A Simple Graphical Representation of the Relative Occurrence and Co-occurrence of Events}
+\title{A Simple Graphical Representation of the Relative Occurrence and Co-Occurrence of Events}
 
-\description{This package delivers one function that allows representing in a single graph the relative occurrence and co-occurrence of events measured in a sample.\cr
+\description{The unique function of this package allows representing in a single graph the relative occurrence and co-occurrence of events measured in a sample.\cr
   As examples, the package was applied to describe the occurrence and co-occurrence of different species of bacterial or viral symbionts infecting 
   arthropods at the individual level. The graphics allows determining the prevalence of each symbiont and the patterns of multiple infections 
   (i.e. how different symbionts share or not the same individual hosts). \cr
