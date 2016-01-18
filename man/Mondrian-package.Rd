@@ -11,7 +11,7 @@
   As examples, the package was applied to describe the occurrence and co-occurrence of different species of bacterial or viral symbionts infecting 
   arthropods at the individual level. The graphics allows determining the prevalence of each symbiont and the patterns of multiple infections 
   (i.e. how different symbionts share or not the same individual hosts). \cr
-  We named the package after the famous painter as the graphical output recalls Mondrian’s famous paintings.
+  We named the package after the famous painter as the graphical output recalls Mondrian’s paintings.
 }
 
 \details{

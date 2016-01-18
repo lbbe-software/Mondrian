@@ -1,12 +1,12 @@
 \name{mondrian}
 \alias{mondrian}
 
-\title{Computes and displays the relative occurrence and co-occurence of multiple infectious profiles}
+\title{Computes and displays the relative occurrence and co-occurence of events}
 
-\description{This function computes and represents the relative occurrence and co-occurence of individual multiple infectious profiles.
-Individuals can belong to a unique population or to several ones.
-
-The graphical output looks like Mondrian paintings.}
+\description{This function allows representing in a single graph the relative occurrence and co-occurrence of events measured in a sample. As examples, the package     was applied to describe the occurrence and co-occurrence of different species of bacterial or viral symbionts infecting arthropods at the individual level. The       graphics allows determining the prevalence of each symbiont and the patterns of multiple infections (i.e. how different symbionts share or not the same individual
+  hosts). 
+  The graphical output recalls Mondrian’s paintings.
+  }
 
 \usage{
   mondrian(data, labels = colnames(data), xlab = "", ylab = "", main = "", 
@@ -34,12 +34,15 @@ The graphical output looks like Mondrian paintings.}
   The \code{mondrian} function yields two outputs:
   
   - a plot representing the occurence and co-occurence of symbionts within individuals, recalling famous Mondrian paintings.
-    For each column (the columns in the plot match with the columns in \code{data}), the coloured area corresponds to the total prevalence of this symbiont. 
+    Individuals are represented by horizontal lines, and each column represents one symbiont. 
+    Horizontal lines (representing individuals) are reordered to optimize the reading. 
+    Uninfected individuals are always represented in white.
+    For each column, the coloured area corresponds to the total prevalence of this symbiont. 
     When coloured areas are present in different columns, this indicates co-infection.
     If individuals belong to different populations (\code{pop} is not null), the graphical output is a layout with one display for each sub-population 
     and one display where all individuals are considered belonging to a unique population.
   
-  - the distinct profiles of multiple infection (considering all symbionts in \code{data}) and their presence percentage in the whole population and in each sub-population (when \code{pop} is not null).
+  - the distinct profiles of multiple infection and their prevalence (considering all symbionts in \code{data}) in the whole population and in each sub-population (when \code{pop} is not null).
 }
 
 \seealso{

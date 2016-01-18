@@ -2,7 +2,7 @@
 \alias{endosymbiont_1pop}
 \docType{data}
 
-\title{Multiple infectious profiles in one population}
+\title{Multiple infection profiles in one population}
 
 \description{Presence/absence data about 3 endosymbionts in each of 10 individuals belonging to the same population.}
 
