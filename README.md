@@ -17,24 +17,35 @@ We named the package after the famous painter as the graphical output recalls Mo
 The `Mondrian` package is not yet on CRAN.
 To install the development version from GitHub:
 
-1. Install the release version of `devtools` from CRAN with `install.packages("devtools")`.
+1.. Install the release version of `devtools` from CRAN with `install.packages("devtools")`.
 
-2. Make sure you have a working development environment.
+2.. Make sure you have a working development environment.
     * **Windows**: Install [Rtools](http://cran.r-project.org/bin/windows/Rtools/).
     * **Mac**: Install Xcode from the Mac App Store.
     * **Linux**: Install a compiler and various development libraries (details vary across different flavors of Linux).
     
-3. Then:
+3.. Then:
 ```r
 library(devtools)
 install_github("aursiber/Mondrian")
 ```
 
-4. Once installed, the package can be loaded using:
-
+4.. Once installed, the package can be loaded using:
 ```r
 library("Mondrian")
 ```
+
+
+### The web application of `Mondrian`
+
+A web application (a `Shiny` application) is available to use the functionalities of the `Mondrian` package in an interactive way.
+In this application, two examples are shown. The user can also upload its own data and compute the `mondrian` function on it. 
+The display output can then be saved.
+
+The `MONDRIAN Shiny app` can be found at:
+http://lbbe-shiny.univ-lyon1.fr:3838/MondrianShiny/
+
+
 
 
 ### Articles which use `Mondrian` functionalities
