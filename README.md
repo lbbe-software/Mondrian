@@ -4,11 +4,12 @@
 
 # Mondrian
 
-The `Mondrian` package delivers only one function.
-This function, named `mondrian`, computes and displays the relative occurence and co-occurence of events.
-It produces a graphical representation of the relative score of profiles concerning presnec/absence data
-and prints the relative percentages of each profile.
-
+The unique function of the `Mondrian` package, named `mondrian`, allows representing in a single graph the relative occurrence and co-occurrence of events measured in a sample.
+As examples, the package was applied to describe the occurrence and co-occurrence of different species of bacterial or viral symbionts infecting 
+arthropods at the individual level. The graphics allows determining the prevalence of each symbiont and the patterns of multiple infections 
+(i.e. how different symbionts share or not the same individual hosts). 
+We named the package after the famous painter as the graphical output recalls Mondrian’s paintings.
+  
 
 
 ### Installing `Mondrian`
@@ -24,7 +25,6 @@ To install the development version from GitHub:
     * **Linux**: Install a compiler and various development libraries (details vary across different flavors of Linux).
     
 3. Then:
-
 ```r
 library(devtools)
 install_github("aursiber/Mondrian")
@@ -33,7 +33,7 @@ install_github("aursiber/Mondrian")
 4. Once installed, the package can be loaded using:
 
 ```r
-library("adegraphics")
+library("Mondrian")
 ```
 
 
