@@ -39,7 +39,7 @@ mondrian <- function(data, labels = colnames(data), xlab = "", ylab = "" , main 
     par(mfrow = c(1, 1))
     invisible(outpop)
     
-
+    
   } else {  ## Individuals are defined as belonging to the same population
     
     ## Percents matrix building
@@ -60,14 +60,14 @@ mondrian <- function(data, labels = colnames(data), xlab = "", ylab = "" , main 
     
     dimrect <- rbind(rep(0, ncol(mat_profiles)), apply(mat_profiles, 2, cumsum))
     
-  	out <- sapply(1:ncol(mat_profiles), function(Y) {
-        sapply(1:nrow(mat_profiles), function(X) {
-            rect(Y - 1, dimrect[X], Y, dimrect[X + 1], col = ifelse(profiles[X, Y] == "1", col[Y], "white"))
-          })
+    out <- sapply(1:ncol(mat_profiles), function(Y) {
+      sapply(1:nrow(mat_profiles), function(X) {
+        rect(Y - 1, dimrect[X], Y, dimrect[X + 1], col = ifelse(profiles[X, Y] == "1", col[Y], "white"))
       })
+    })
     
     if(indiv)
-        sapply(1:nrow(data), function(i) lines(0:ncol(data), rep(i/nrow(data), 1 + ncol(data))))
+      sapply(1:nrow(data), function(i) lines(0:ncol(data), rep(i/nrow(data), 1 + ncol(data))))
     
     invisible(percents_profiles)
   }
