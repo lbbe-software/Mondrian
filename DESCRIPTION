@@ -12,3 +12,5 @@ Imports: RColorBrewer
 License: GPL (>=2.0)
 LazyData: yes
 Encoding: UTF-8
+URL: http://lbbe-shiny.univ-lyon1.fr:3838/MondrianShiny/, https://github.com/aursiber/Mondrian
+BugReports: https://github.com/aursiber/Mondrian/issues
