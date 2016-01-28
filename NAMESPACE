@@ -1,3 +1,5 @@
-importFrom(RColorBrewer, brewer.pal)
+importFrom("RColorBrewer", "brewer.pal")
+importFrom("graphics", "axis", "lines", "par", "plot", "rect")
+importFrom("stats", "complete.cases")
 
 export(mondrian)
