@@ -43,7 +43,7 @@ In this application, two examples are shown. The user can also upload its own da
 The display output can then be saved.
 
 The `MONDRIAN Shiny app` can be found at:
-http://lbbe-shiny.univ-lyon1.fr:3838/MondrianShiny/
+http://lbbe-shiny.univ-lyon1.fr/MondrianShiny/
 
 
 
