@@ -32,7 +32,7 @@ install_github("aursiber/Mondrian")
 
 The stable version can be installed from CRAN using:
 ```r
-install.packages("ade4")
+install.packages("Mondrian")
 ```
 
 Once installed, the package can be loaded using:
