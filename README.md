@@ -1,5 +1,6 @@
 [![Travis-CI Build Status](https://travis-ci.org/aursiber/Mondrian.svg?branch=master)](https://travis-ci.org/aursiber/Mondrian)
 [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/y3771xk9a4obepas/branch/master?svg=true)](https://ci.appveyor.com/project/aursiber/Mondrian/branch/master)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/Mondrian)](http://cran.r-project.org/package=Mondrian)
 
 
 # Mondrian
@@ -14,7 +15,6 @@ We named the package after the famous painter as the graphical output recalls Mo
 
 ### Installing `Mondrian`
 
-The `Mondrian` package is not yet on CRAN.
 To install the development version from GitHub:
 
 1. Install the release version of `devtools` from CRAN with `install.packages("devtools")`.
@@ -30,7 +30,12 @@ library(devtools)
 install_github("aursiber/Mondrian")
 ```
 
-4. Once installed, the package can be loaded using:
+The stable version can be installed from CRAN using:
+```r
+install.packages("ade4")
+```
+
+Once installed, the package can be loaded using:
 ```r
 library("Mondrian")
 ```
