@@ -1,3 +1,4 @@
+travis-tool.sh
 ^\.travis\.yml$
 ^README\.md$
 ^README\.Rmd$
