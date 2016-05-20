@@ -4,13 +4,13 @@ Title: A Simple Graphical Representation of the Relative Occurrence and Co-Occur
 Description: The unique function of this package allows representing in a single graph the relative occurrence and co-occurrence of events measured in a sample. 
   As examples, the package was applied to describe the occurrence and co-occurrence of different species of bacterial or viral symbionts infecting arthropods at the individual level. The graphics allows determining the prevalence of each symbiont and the patterns of multiple infections (i.e. how different symbionts share or not the same individual hosts). 
   We named the package after the famous painter as the graphical output recalls Mondrian’s paintings.
-Version: 1.0-0
-Date: 2016-03-04
+Version: 1.0-1
+Date: 2016-05-20
 Author: Aurélie Siberchicot, Delphine Charif, Gabriel Terraz and Fabrice Vavre
 Maintainer: Aurélie Siberchicot <aurelie.siberchicot@univ-lyon1.fr>
 Imports: RColorBrewer
 License: GPL (>=2.0)
 LazyData: yes
 Encoding: UTF-8
-URL: https://github.com/aursiber/Mondrian
+URL: https://github.com/aursiber/Mondrian ; http://lbbe-shiny.univ-lyon1.fr/MondrianShiny/
 BugReports: https://github.com/aursiber/Mondrian/issues
