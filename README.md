@@ -1,5 +1,5 @@
 [![Travis-CI Build Status](https://travis-ci.org/aursiber/Mondrian.svg?branch=master)](https://travis-ci.org/aursiber/Mondrian)
-[![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/y3771xk9a4obepas/branch/master?svg=true)](https://ci.appveyor.com/project/aursiber/Mondrian/branch/master)
+[![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/uof9ei4jm02n2cdu/branch/master?svg=true)](https://ci.appveyor.com/project/aursiber/Mondrian/branch/master)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/Mondrian)](http://cran.r-project.org/package=Mondrian)
 
 
