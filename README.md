@@ -4,6 +4,10 @@
 [![CRAN Downloads](https://cranlogs.r-pkg.org/badges/Mondrian)](https://cran.r-project.org/package=Mondrian)
 
 
+<img src=https://github.com/aursiber/Mondrian/blob/master/inst/MondrianShiny/www/mondrian.png width="50"/>
+
+
+
 The unique function of the `Mondrian` package, named `mondrian`, allows representing in a single graph the relative occurrence and co-occurrence of events measured in a sample.
 As examples, the package was applied to describe the occurrence and co-occurrence of different species of bacterial or viral symbionts infecting 
 arthropods at the individual level. The graphics allows determining the prevalence of each symbiont and the patterns of multiple infections 
