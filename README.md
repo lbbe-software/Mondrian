@@ -4,8 +4,6 @@
 [![CRAN Downloads](https://cranlogs.r-pkg.org/badges/Mondrian)](https://cran.r-project.org/package=Mondrian)
 
 
-# Mondrian
-
 The unique function of the `Mondrian` package, named `mondrian`, allows representing in a single graph the relative occurrence and co-occurrence of events measured in a sample.
 As examples, the package was applied to describe the occurrence and co-occurrence of different species of bacterial or viral symbionts infecting 
 arthropods at the individual level. The graphics allows determining the prevalence of each symbiont and the patterns of multiple infections 
@@ -14,35 +12,28 @@ We named the package after the famous painter as the graphical output recalls Mo
   
 
 
-### Installing `Mondrian`
+# The package
 
-To install the development version from GitHub:
-
-1. Install the release version of `devtools` from CRAN with `install.packages("devtools")`.
-
-2. Make sure you have a working development environment.
-    * **Windows**: Install [Rtools](http://cran.r-project.org/bin/windows/Rtools/).
-    * **Mac**: Install Xcode from the Mac App Store.
-    * **Linux**: Install a compiler and various development libraries (details vary across different flavors of Linux).
-    
-3. Then:
-```r
-library(devtools)
-install_github("aursiber/Mondrian")
-```
-
-The stable version can be installed from CRAN using:
+The stable version of `Mondrian` can be installed from CRAN using:
 ```r
 install.packages("Mondrian")
 ```
 
-Once installed, the package can be loaded using:
+The development version of Mondrian can be installed from GitHub (`remotes` needed):
 ```r
-library("Mondrian")
+if (!requireNamespace("remotes", quietly = TRUE))
+   install.packages("remotes")
+   
+remotes::install_github("aursiber/Mondrian")
+```
+
+Finally load the package in your current R session with the following R command:
+```r
+library(Mondrian)
 ```
 
 
-### The web application of `Mondrian`
+# The shiny app
 
 A web application (a `Shiny` application) is available to use the functionalities of the `Mondrian` package in an interactive way.
 In this application, two examples are shown. The user can also upload its own data and compute the `mondrian` function on it. 
@@ -54,7 +45,7 @@ http://lbbe-shiny.univ-lyon1.fr/MondrianShiny/
 
 
 
-### Articles which use `Mondrian` functionalities
+# Articles which use `Mondrian` functionalities
 
 * *Competitive outcome of multiple infections in a behavior-manipulating virus/wasp interaction.*
 Martinez et al. (2015). Ecology and Evolution, 5(24):5934–5945. doi: 10.1002/ece3.1749
