@@ -8,6 +8,7 @@ Version: 1.0-1
 Author: Aurélie Siberchicot, Delphine Charif, Gabriel Terraz and Fabrice Vavre
 Maintainer: Aurélie Siberchicot <aurelie.siberchicot@univ-lyon1.fr>
 Imports: RColorBrewer
+Suggests: DT, shiny, shinyBS
 License: GPL (>=2.0)
 LazyData: yes
 Encoding: UTF-8

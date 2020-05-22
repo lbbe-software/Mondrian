@@ -1,0 +1,2 @@
+A Simple Graphical Representation of the Relative Occurrence and 
+Co-Occurrence of Events.

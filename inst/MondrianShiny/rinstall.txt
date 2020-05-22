@@ -1,0 +1,4 @@
+install.packages("shinyBS",dependencies = TRUE, repos = "http://cran.univ-lyon1.fr")
+install.packages("DT",dependencies = TRUE, repos = "http://cran.univ-lyon1.fr")
+install.packages("RColorBrewer", dependencies = TRUE, repos = "http://cran.univ-lyon1.fr")
+install.packages("Mondrian", dependencies = TRUE, repos = "http://cran.univ-lyon1.fr")

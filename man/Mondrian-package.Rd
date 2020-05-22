@@ -12,20 +12,26 @@
   arthropods at the individual level. The graphics allows determining the prevalence of each symbiont and the patterns of multiple infections 
   (i.e. how different symbionts share or not the same individual hosts). \cr
   We named the package after the famous painter as the graphical output recalls Mondrian’s paintings.
-}
-
-\details{
-  \tabular{ll}{
-    Package: \tab Mondrian\cr
-    Type: \tab Package\cr
-    Version: \tab 1.0-0\cr
-    Date: \tab 2016-01-07\cr
-    License: \tab GPL (>=2)\cr
-  }
+  
+  A shiny application \code{MondrianShiny} is available to use the functionalities of the \code{Mondrian} package in an interactive way.
+  In this application, two examples are shown. The user can also upload its own data and compute the \code{mondrian} function on it. 
+  The display output can then be saved. \code{MondrianShiny} can be run on a R session, doing \code{shiny::runApp(system.file("MondrianShiny", package = "Mondrian"))}
+  or online at \url{http://lbbe-shiny.univ-lyon1.fr/MondrianShiny/}. 
 }
 
 \author{
   Aurélie Siberchicot <aurelie.siberchicot@univ-lyon1.fr>, Delphine Charif, Gabriel Terraz and Fabrice Vavre
+}
+
+\examples{
+
+# About using the MondrianShiny app
+# 
+
+if(interactive()) {
+  shiny::runApp(system.file("MondrianShiny", package = "Mondrian"))
+}
+
 }
 
 \keyword{package}

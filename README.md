@@ -33,14 +33,22 @@ library(Mondrian)
 ```
 
 
+
 # The shiny app
 
 A web application (a `Shiny` application) is available to use the functionalities of the `Mondrian` package in an interactive way.
 In this application, two examples are shown. The user can also upload its own data and compute the `mondrian` function on it. 
 The display output can then be saved.
 
-The `MONDRIAN Shiny app` can be found at:
-http://lbbe-shiny.univ-lyon1.fr/MondrianShiny/
+`MondrianShiny` can be run on a R session, doing:
+```r
+shiny::runApp(system.file("MondrianShiny", package = "Mondrian"))
+```
+
+or online at:
+<a href="http://lbbe-shiny.univ-lyon1.fr/MondrianShiny/" target="_blank">http://lbbe-shiny.univ-lyon1.fr/MondrianShiny/</a>
+
+This shiny app is runing with the development version of `Mondrian`.
 
 
 
