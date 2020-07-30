@@ -10,11 +10,7 @@ shinyServer(function(input, output) {
   
   output$ex1table <- renderPrint({
     data(endosymbiont_1pop)
-    pdf("temp1.pdf")
     res <- mondrian(endosymbiont_1pop, col = c("blue", "red", "yellow"))
-    dev.off()
-    if(file.exists("temp1.pdf"))
-      file.remove("temp1.pdf")
     return(res)
   })
   
@@ -36,11 +32,7 @@ shinyServer(function(input, output) {
   
   output$ex2table <- renderPrint({
     data(endosymbiont_3pop)
-    pdf("temp2.pdf")
     res <- mondrian(endosymbiont_3pop, pop = 1)
-    dev.off()
-    if(file.exists("temp2.pdf"))
-      file.remove("temp2.pdf")
     return(res)
   })
   
@@ -145,11 +137,7 @@ shinyServer(function(input, output) {
       inFile <- input$file
       if (! is.null(inFile)) {
         validateFile()
-        pdf("tempmondrian.pdf")
         res <- plotdata()
-        dev.off()
-        if(file.exists("tempmondrian.pdf"))
-          file.remove("tempmondrian.pdf")
         if (! is.null(res))
           return(res)
       }
