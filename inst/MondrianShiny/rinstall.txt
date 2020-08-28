@@ -1,5 +1,5 @@
-install.packages("shinyBS",dependencies = TRUE, repos = "http://cran.univ-lyon1.fr")
-install.packages("DT",dependencies = TRUE, repos = "http://cran.univ-lyon1.fr")
-install.packages("RColorBrewer", dependencies = TRUE, repos = "http://cran.univ-lyon1.fr")
-install.packages("remotes", dependencies = TRUE, repos = "http://cran.univ-lyon1.fr")
-remotes::install_github("aursiber/Mondrian")
+if(!requireNamespace("shinyBS", quietly = TRUE)) install.packages("shinyBS", dependencies = TRUE, repos = "http://cran.univ-lyon1.fr")
+if(!requireNamespace("DT", quietly = TRUE)) install.packages("DT", dependencies = TRUE, repos = "http://cran.univ-lyon1.fr")
+if(!requireNamespace("RColorBrewer", quietly = TRUE)) install.packages("RColorBrewer", dependencies = TRUE, repos = "http://cran.univ-lyon1.fr")
+if(!requireNamespace("remotes", quietly = TRUE)) install.packages("remotes", dependencies = TRUE, repos = "http://cran.univ-lyon1.fr")
+remotes::install_github("aursiber/Mondrian") # always install 'Mondrian' to always have the last version from github
