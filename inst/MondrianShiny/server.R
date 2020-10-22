@@ -3,42 +3,31 @@ shinyServer(function(input, output) {
   ##########################################
   ############### runex1 ###################
   ##########################################
-  output$ex1plot <- renderPlot({
-    data(endosymbiont_1pop)
-    mondrian(endosymbiont_1pop, col = c("blue", "red", "yellow"))
-  })
-  
   output$ex1table <- renderPrint({
     data(endosymbiont_1pop)
-    res <- mondrian(endosymbiont_1pop, col = c("blue", "red", "yellow"))
+    output$ex1data <- renderDataTable({
+      DT::datatable(endosymbiont_1pop, options = list(pageLength = 10, searching = FALSE))
+    })
+    output$ex1plot <- renderPlot({
+      res <- mondrian(endosymbiont_1pop, col = c("blue", "red", "yellow"))
+    })
     return(res)
   })
-  
-  output$ex1data <- renderDataTable({
-    data(endosymbiont_1pop)
-    DT::datatable(endosymbiont_1pop, options = list(pageLength = 10, searching = FALSE))
-  })
-  
   
   
   ##########################################
   ############### runex2 ###################
   ##########################################
-  
-  output$ex2plot <- renderPlot({
-    data(endosymbiont_3pop)
-    mondrian(endosymbiont_3pop, pop = 1)
-  })
-  
   output$ex2table <- renderPrint({
     data(endosymbiont_3pop)
-    res <- mondrian(endosymbiont_3pop, pop = 1)
+    output$ex2data <- renderDataTable({
+      res <- mondrian(endosymbiont_3pop, pop = 1)
+      DT::datatable(endosymbiont_3pop, options = list(pageLength = 10, searching = FALSE))
+    })
+    output$ex2plot <- renderPlot({
+      res <- mondrian(endosymbiont_3pop, pop = 1)
+    })
     return(res)
-  })
-  
-  output$ex2data <- renderDataTable({
-    data(endosymbiont_3pop)
-    DT::datatable(endosymbiont_3pop, options = list(pageLength = 10, searching = FALSE))
   })
   
   
@@ -94,7 +83,6 @@ shinyServer(function(input, output) {
     })
   })
   
-  
   plotdata <- reactive({
     res <- loaddata()
     isolate({
@@ -109,7 +97,6 @@ shinyServer(function(input, output) {
     })    
   })
   
-  
   validateFile <- function(){
     inFile <- input$file
     extFile <- file_ext(inFile$name)
@@ -117,7 +104,6 @@ shinyServer(function(input, output) {
       need(extFile == "txt" | extFile == "csv", "Only .txt or .csv files are allowed.")
     )
   }
-  
   
   output$mondrianplot <- renderPlot({
     input$doplot
@@ -158,11 +144,6 @@ shinyServer(function(input, output) {
   })
   
   
-  
-  
-  
-  
-  
   plotdata2 <- function() {
     res <- loaddata()
     mondrian(res$dd, labels = res$ll, xlab = res$xx, ylab = res$yy, main = res$mm, col = res$cc, pop = res$pp, indiv = res$indiv)
@@ -180,10 +161,5 @@ shinyServer(function(input, output) {
     },
     contentType = 'image/png'
   )
-  
-  #   outputOptions(output, "save", suspendWhenHidden = FALSE)
-  
-  
-  
   
 })
