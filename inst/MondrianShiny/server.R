@@ -3,31 +3,30 @@ shinyServer(function(input, output) {
   ##########################################
   ############### runex1 ###################
   ##########################################
-  output$ex1table <- renderPrint({
+  output$ex1data <- renderDataTable({
     data(endosymbiont_1pop)
-    output$ex1data <- renderDataTable({
-      DT::datatable(endosymbiont_1pop, options = list(pageLength = 10, searching = FALSE))
-    })
     output$ex1plot <- renderPlot({
-      res <- mondrian(endosymbiont_1pop, col = c("blue", "red", "yellow"))
+      mondrian(endosymbiont_1pop, col = c("blue", "red", "yellow"))
     })
-    return(res)
+    output$ex1table <- renderPrint({
+      print(mondrian(endosymbiont_1pop, col = c("blue", "red", "yellow")))
+    })
+    return(DT::datatable(endosymbiont_1pop, options = list(pageLength = 10, searching = FALSE)))
   })
   
   
   ##########################################
   ############### runex2 ###################
   ##########################################
-  output$ex2table <- renderPrint({
+  output$ex2data <- renderDataTable({
     data(endosymbiont_3pop)
-    output$ex2data <- renderDataTable({
-      res <- mondrian(endosymbiont_3pop, pop = 1)
-      DT::datatable(endosymbiont_3pop, options = list(pageLength = 10, searching = FALSE))
-    })
     output$ex2plot <- renderPlot({
-      res <- mondrian(endosymbiont_3pop, pop = 1)
+      mondrian(endosymbiont_3pop, pop = 1)
     })
-    return(res)
+    output$ex2table <- renderPrint({
+      print(mondrian(endosymbiont_3pop, pop = 1))
+    })
+    return(DT::datatable(endosymbiont_3pop, options = list(pageLength = 10, searching = FALSE)))
   })
   
   
