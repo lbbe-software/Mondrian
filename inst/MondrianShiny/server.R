@@ -6,7 +6,6 @@ shinyServer(function(input, output) {
   output$ex1data <- renderDataTable({
     data(endosymbiont_1pop)
     output$ex1plot <- renderPlot({
-      pdf(NULL)
       mondrian(endosymbiont_1pop, col = c("blue", "red", "yellow"))
     })
     output$ex1table <- renderPrint({
@@ -22,7 +21,6 @@ shinyServer(function(input, output) {
   output$ex2data <- renderDataTable({
     data(endosymbiont_3pop)
     output$ex2plot <- renderPlot({
-      pdf(NULL)
       mondrian(endosymbiont_3pop, pop = 1)
     })
     output$ex2table <- renderPrint({
