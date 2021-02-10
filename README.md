@@ -50,7 +50,7 @@ shiny::runApp(system.file("MondrianShiny", package = "Mondrian"))
 ```
 
 or online at:
-<a href="http://lbbe-shiny.univ-lyon1.fr/MondrianShiny/" target="_blank">http://lbbe-shiny.univ-lyon1.fr/MondrianShiny/</a>
+<a href="http://lbbe-shiny.univ-lyon1.fr/Mondrian/inst/MondrianShiny/" target="_blank">http://lbbe-shiny.univ-lyon1.fr/Mondrian/inst/MondrianShiny/</a>
 
 This shiny app is runing with the development version of `Mondrian`.
 
