@@ -12,5 +12,5 @@ Suggests: DT, shiny, shinyBS
 License: GPL (>=2.0)
 LazyData: yes
 Encoding: UTF-8
-URL: https://github.com/aursiber/Mondrian ; http://lbbe-shiny.univ-lyon1.fr/MondrianShiny/
+URL: https://github.com/aursiber/Mondrian ; http://lbbe-shiny.univ-lyon1.fr/Mondrian/inst/MondrianShiny/
 BugReports: https://github.com/aursiber/Mondrian/issues
