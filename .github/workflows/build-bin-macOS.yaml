@@ -52,5 +52,5 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: binaries-for-mac
-          path: /Users/runner/work/Mondrian/Mondrian/check/Mondrian_1.1-1.tar.gz
+          path: /Users/runner/work/Mondrian/Mondrian/check/Mondrian_*.tar.gz
           
