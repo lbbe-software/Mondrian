@@ -36,21 +36,27 @@ jobs:
           http-user-agent: ${{ matrix.config.http-user-agent }}
           use-public-rspm: true
       
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          pak-version: devel
-          extra-packages: any::rcmdcheck, any::XML
-          needs: check
-          # See https://github.com/r-lib/actions/issues/559 for the XML issue
-
-      - uses: r-lib/actions/check-r-package@v2
-        with:
-          args: 'c("--no-manual", "--as-cran")'
-          error-on: '"error"'
-          check-dir: '"check"'
+      # - uses: r-lib/actions/setup-r-dependencies@v2
+      #   with:
+      #     pak-version: devel
+      #     extra-packages: any::rcmdcheck, any::XML
+      #     needs: check
+      #     # See https://github.com/r-lib/actions/issues/559 for the XML issue
+      # 
+      # - uses: r-lib/actions/check-r-package@v2
+      #   with:
+      #     args: 'c("--no-manual", "--as-cran")'
+      #     error-on: '"error"'
+      #     check-dir: '"check"'
+      
+      - name: Build
+        run: |
+          install.packages("pkgbuild")
+          pkgbuild::build(".", binary = TRUE)
+        shell: Rscript {0}
       
       - uses: actions/upload-artifact@v3
         with:
           name: binaries-for-mac
-          path: /Users/runner/work/Mondrian/Mondrian/check/Mondrian_*.tar.gz
+          path: /Users/runner/work/Mondrian/Mondrian_*.tar.gz
           
