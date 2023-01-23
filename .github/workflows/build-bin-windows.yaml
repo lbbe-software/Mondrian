@@ -52,5 +52,5 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: binaries-for-windows
-          path: /Users/runner/work/Mondrian/Mondrian_*.zip
+          path: D:/a/Mondrian/Mondrian_*.zip
           
