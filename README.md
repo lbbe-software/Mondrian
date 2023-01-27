@@ -1,10 +1,8 @@
+# Mondrian: Display the relative occurrence and co-occurrence of events in a sample <img src="man/figures/hexsticker.png" align="right" style="float:right; height:120px;"/>
+
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/Mondrian)](http://cran.r-project.org/package=Mondrian)
 [![CRAN Downloads](https://cranlogs.r-pkg.org/badges/Mondrian)](https://cran.r-project.org/package=Mondrian)
 [![R-CMD-check](https://github.com/aursiber/Mondrian/workflows/R-CMD-check/badge.svg)](https://github.com/aursiber/Mondrian/actions)
-
-<img src=https://github.com/aursiber/Mondrian/blob/master/man/figures/hexsticker.png width="50"/>
-
-
 
 The unique function of the `Mondrian` package, named `mondrian`, allows representing in a single graph the relative occurrence and co-occurrence of events measured in a sample.
 As examples, the package was applied to describe the occurrence and co-occurrence of different species of bacterial or viral symbionts infecting 
@@ -12,7 +10,6 @@ arthropods at the individual level. The graphics allows determining the prevalen
 (i.e. how different symbionts share or not the same individual hosts). 
 We named the package after the famous painter as the graphical output recalls Mondrian’s paintings.
   
-
 
 # The package
 
