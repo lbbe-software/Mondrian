@@ -2,7 +2,7 @@
 [![CRAN Downloads](https://cranlogs.r-pkg.org/badges/Mondrian)](https://cran.r-project.org/package=Mondrian)
 [![R-CMD-check](https://github.com/aursiber/Mondrian/workflows/R-CMD-check/badge.svg)](https://github.com/aursiber/Mondrian/actions)
 
-<img src=https://github.com/aursiber/Mondrian/blob/master/inst/MondrianShiny/www/mondrian.png width="50"/>
+<img src=https://github.com/aursiber/Mondrian/blob/master/man/figures/hexsticker.png width="50"/>
 
 
 

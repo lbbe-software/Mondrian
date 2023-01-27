@@ -2,47 +2,38 @@
 shinyUI(fluidPage(
   titlePanel(
     title = "",
-    tags$head(tags$link(rel = "icon", type = "image/png", href = "mondrian.png"), tags$title(" Mondrian Shiny App"))
+    tags$head(tags$link(rel = "icon", type = "image/png", href = "hexsticker.png"), tags$title(" Mondrian Shiny App"))
   ),
   theme = "bootstrap.css",
   br(),
   wellPanel(
     fluidRow(
-      column(width = 1, br(), img(src = "mondrian.png", width = 100, style = "float:center")
+      column(width = 3, 
+             br(), 
+             img(src = "hexsticker.png", width = 200, style = "float:center"),
+             br(), br(), br(), br(),
+             img(src = "logolbbe.png")
       ),
       
-      column(width = 5, 
-             h1(HTML("<center><div contenteditable><span style='color:blue'>M</span>O<span style='color:yellow; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black'>N</span>DRIA<span style='color:red'>N</span></div></center>")),
-             h1("shiny application", align = "center")
-      ),
-      column(width = 6, 
-             wellPanel(style = "border:2px solid black;",
-                       img(src = "logolbbe.png", style = "float:right; padding-right:5px"),
-                       h6("When you use this app, please cite the ", em("Mondrian R"), " package:", br(),
-                          tags$b("A. Siberchicot, D. Charif, G. Terraz and F. Vavre", br(),
-                                 a("https://cran.r-project.org/web/packages/Mondrian/", href = "https://cran.r-project.org/web/packages/Mondrian/", TARGET="_blank", style="color:blue;")), 
-                          br(), br(), br(),
-                          "This app uses the development version of the Mondrian package available at ", 
-                          a("https://github.com/aursiber/Mondrian", href = "https://github.com/aursiber/Mondrian", TARGET="_blank", style="color:blue;"), "."
-                       )
-             )
-      )
-    ),
-    br(),
-    
-    fluidRow(
-      column(width = 7, 
-             wellPanel(style = "border:0px solid black;",
-                       h5("This web application is an interactive way to use the functionalities of the ", em("R"), " package", em("Mondrian"), 
-                          "which represent in a single graph the relative occurrence and co-occurrence of events measured in a sample.", br(), 
-                          "The graphical output recalls Mondrian’s paintings.",
-                          br(), br(), "On the right, you can choose either to look at the two available examples or plot your own data on a mondrian plot."))
-      ),
-      column(width = 5, br(), style = "float:left; padding-left:85px",
-             radioButtons("whattodo", "", c("run the 1st example" = "runex1", "run the 2nd example" = "runex2", "make your own graph" = "runmyplot"),
+      column(width = 8, 
+             h4(tags$b("Mondrian shiny app"),  "is an interactive way to use the functionalities of the ", em("R"), " package", em("Mondrian"), 
+               "which represent in a single graph the relative occurrence and co-occurrence of events measured in a sample. 
+                The graphical output recalls Mondrian’s paintings."),
+             br(),
+             h4("When you use this app, please cite the ", em("Mondrian R"), " package:", br(),
+                "A. Siberchicot, D. Charif, G. Terraz and F. Vavre", 
+                       a("https://cran.r-project.org/web/packages/Mondrian/", href = "https://cran.r-project.org/web/packages/Mondrian/", TARGET="_blank", style="color:blue;")), 
+             br(), 
+             h4("This app uses the development version of the Mondrian package available at ", 
+                a("https://github.com/aursiber/Mondrian", href = "https://github.com/aursiber/Mondrian", TARGET="_blank", style="color:blue;"), "."),
+             br(), hr(), br(),
+             radioButtons("whattodo", 
+                          h4("You can choose either to look at the two available examples or plot your own data on a mondrian plot."), 
+                          c("run the 1st example" = "runex1", "run the 2nd example" = "runex2", "make your own graph" = "runmyplot"),
                           selected = 0)
       )
-    )),
+    )
+  ),
   
   
   conditionalPanel(
