@@ -11,6 +11,7 @@ arthropods at the individual level. The graphics allows determining the prevalen
 We named the package after the famous painter as the graphical output recalls Mondrian’s paintings.
   
 
+
 # The package
 
 The stable version of `Mondrian` can be installed from CRAN using:
