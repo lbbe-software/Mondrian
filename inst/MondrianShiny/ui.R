@@ -25,7 +25,7 @@ shinyUI(fluidPage(
                        a("https://cran.r-project.org/web/packages/Mondrian/", href = "https://cran.r-project.org/web/packages/Mondrian/", TARGET="_blank", style="color:blue;")), 
              br(), 
              h4("This app uses the development version of the Mondrian package available at ", 
-                a("https://github.com/aursiber/Mondrian", href = "https://github.com/aursiber/Mondrian", TARGET="_blank", style="color:blue;"), "."),
+                a("https://github.com/lbbe-software/Mondrian", href = "https://github.com/lbbe-software/Mondrian", TARGET="_blank", style="color:blue;"), "."),
              br(), hr(), br(),
              radioButtons("whattodo", 
                           h4("You can choose either to look at the two available examples or plot your own data on a mondrian plot."), 
