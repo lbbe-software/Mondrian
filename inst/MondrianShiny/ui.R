@@ -17,12 +17,12 @@ shinyUI(fluidPage(
       
       column(width = 8, 
              h4(tags$b("Mondrian shiny app"),  "is an interactive way to use the functionalities of the ", em("R"), " package", em("Mondrian"), 
-               "which represent in a single graph the relative occurrence and co-occurrence of events measured in a sample. 
+                "which represent in a single graph the relative occurrence and co-occurrence of events measured in a sample. 
                 The graphical output recalls Mondrian’s paintings."),
              br(),
              h4("When you use this app, please cite the ", em("Mondrian R"), " package:", br(),
                 "A. Siberchicot, D. Charif, G. Terraz and F. Vavre", 
-                       a("https://cran.r-project.org/web/packages/Mondrian/", href = "https://cran.r-project.org/web/packages/Mondrian/", TARGET="_blank", style="color:blue;")), 
+                a("https://cran.r-project.org/web/packages/Mondrian/", href = "https://cran.r-project.org/web/packages/Mondrian/", TARGET="_blank", style="color:blue;")), 
              br(), 
              h4("This app uses the development version of the Mondrian package available at ", 
                 a("https://github.com/lbbe-software/Mondrian", href = "https://github.com/lbbe-software/Mondrian", TARGET="_blank", style="color:blue;"), "."),
@@ -141,7 +141,7 @@ shinyUI(fluidPage(
                "(* not mandatory)"
              ),
              
-             wellPanel(align = "center", actionButton("doplot", label = "Draw a Mondrian !" , icon("bar-chart"))),
+             wellPanel(align = "center", actionButton("doplot", label = "Draw a Mondrian!" , icon("bar-chart"))),
              wellPanel(align = "center", downloadButton('save', 'Save the plot', icon("save")))
       ),
       
