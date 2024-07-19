@@ -1,6 +1,6 @@
 # Mondrian: Display the relative occurrence and co-occurrence of events in a sample <img src="man/figures/hexsticker.png" align="right" style="float:right; height:120px;"/>
 
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/Mondrian)](http://cran.r-project.org/package=Mondrian)
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/Mondrian)](http://cran.r-project.org/package=Mondrian)
 [![CRAN Downloads](https://cranlogs.r-pkg.org/badges/Mondrian)](https://cran.r-project.org/package=Mondrian)
 [![R-CMD-check](https://github.com/lbbe-software/Mondrian/workflows/R-CMD-check/badge.svg)](https://github.com/lbbe-software/Mondrian/actions)
 
