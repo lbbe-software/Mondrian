@@ -4,7 +4,7 @@ Title: A Simple Graphical Representation of the Relative Occurrence and Co-Occur
 Description: The unique function of this package allows representing in a single graph the relative occurrence and co-occurrence of events measured in a sample. 
   As examples, the package was applied to describe the occurrence and co-occurrence of different species of bacterial or viral symbionts infecting arthropods at the individual level. The graphics allows determining the prevalence of each symbiont and the patterns of multiple infections (i.e. how different symbionts share or not the same individual hosts). 
   We named the package after the famous painter as the graphical output recalls Mondrian’s paintings.
-Version: 1.1-1
+Version: 1.1.2
 Authors@R: c(person("Aurélie", "Siberchicot", role = c("aut", "cre"), email = "aurelie.siberchicot@univ-lyon1.fr", comment = c(ORCID = "0000-0002-7638-8318")),
              person("Delphine", "Charif", role = "aut"),
              person("Gabriel", "Terraz", role = "aut"),
